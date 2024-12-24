@@ -48,14 +48,15 @@ Os resultados incluem:
 ## 📊 Visualizações
 
 ### Histogramas e Boxplots
-![Histogramas e Boxplots](saida/histograma%20e%20bloxplot%20argila.png)
+![Histogramas](saida/histograma.png)
+![Boxplots](saida/boxplot.png)
+![QQ-Plot](saida/qqplot.png)
 
 ### Resultado da Krigagem
-![Krigagem do Parâmetro Argila](saida/Krigagem%20do%20parâmetro%20Argila.png)
+![Krigagem do Parâmetro Argila](saida/Krigagem%20do%20parâmetro%20phagua.png)
 
 ### Semivariograma Ajustado
-![Semivariograma Box-Cox](saida/Semivariograma%20de%20Argila%20(Box-Cox).png)
-
+![Semivariograma Box-Cox](saida/Semivariograma%20de%20phagua
 ### Mapa de Localização
 ![Mapa de Localização](saida/mapa_final_layout.png)
 
