@@ -75,4 +75,5 @@ graph TD
 ---
 
 ## 📜 Licença
-![licença](LICENSE)
+
+Este projeto é licenciado sob a [MIT License](LICENSE).
