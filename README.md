@@ -27,31 +27,40 @@
 
 ## 🔄 Fluxo de Trabalho
 
-1. **Importação de Dados**
-   - Carregar os shapefiles da área de estudo.
-   - Verificar e ajustar projeções espaciais.
+```mermaid
+graph TD
+    A[Importação de Dados] --> B[Verificação de Projeções]
+    B --> C[Análise Estatística]
+    C --> D[Remoção de Outliers]
+    D --> E[Teste de Normalidade]
+    E --> F[Análise Variográfica]
+    F --> G[Semivariograma Ajustado]
+    G --> H[Interpolação por Krigagem]
+    H --> I[Classificação do Raster]
+    I --> J[Exportação como GeoTIFF]
+    J --> K[Visualização de Mapas]
+```
+```
 
-2. **Análise Estatística**
-   - Remoção de outliers utilizando estatísticas robustas.
-   - Geração de estatísticas descritivas e teste de normalidade (Shapiro-Wilk).
-
-3. **Análise Variográfica**
-   - Criação de semivariograma experimental.
-   - Ajuste de um modelo teórico esférico.
-
-4. **Interpolação por Krigagem**
-   - Interpolação espacial dos valores de pHÁgua utilizando o modelo ajustado.
-   - Classificação do raster em quatro categorias:
-     - Muito Baixo: < 5.5
-     - Baixo: 5.5–6.0
-     - Moderado: 6.0–6.5
-     - Alto: > 6.5
-
-5. **Exportação e Visualização**
-   - Exportação do raster final como GeoTIFF.
-   - Criação de mapas finais para apresentação.
+### **Explicação do Diagrama**
+- **A [Importação de Dados]:** Carrega os shapefiles necessários (área limite e camada de solo).
+- **B [Verificação de Projeções]:** Garante que as camadas estão na mesma projeção.
+- **C [Análise Estatística]:** Exploração dos dados, geração de estatísticas descritivas.
+- **D [Remoção de Outliers]:** Identificação e exclusão de valores fora do padrão.
+- **E [Teste de Normalidade]:** Avalia se os dados seguem uma distribuição normal.
+- **F [Análise Variográfica]:** Criação do semivariograma experimental.
+- **G [Semivariograma Ajustado]:** Ajuste do modelo teórico esférico ao semivariograma.
+- **H [Interpolação por Krigagem]:** Gera um raster interpolado baseado nos valores de pHÁgua.
+- **I [Classificação do Raster]:** Divide o raster em classes significativas.
+- **J [Exportação como GeoTIFF]:** Salva o raster interpolado para uso em SIG.
+- **K [Visualização de Mapas]:** Geração de gráficos e mapas finais.
 
 ---
+
+### **Incluir no README.md**
+1. Copie o código acima.
+2. Insira na seção correspondente no `README.md`.
+3. Salve e envie as alterações para o GitHub:
 
 ## 📈 Estatísticas
 
