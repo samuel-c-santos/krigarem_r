@@ -75,3 +75,4 @@ graph TD
 ---
 
 ## 📜 Licença
+![licença](LICENSE)
