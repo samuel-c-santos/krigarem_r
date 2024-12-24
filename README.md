@@ -56,7 +56,8 @@ Os resultados incluem:
 ![Krigagem do Parâmetro Argila](saida/Krigagem%20do%20parâmetro%20phagua.png)
 
 ### Semivariograma Ajustado
-![Semivariograma Box-Cox](saida/Semivariograma%20de%20phagua
+![Semivariograma Box-Cox](saida/Semivariograma%20de%20phagua)
+
 ### Mapa de Localização
 ![Mapa de Localização](saida/mapa_final_layout.png)
 
