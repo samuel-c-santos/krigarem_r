@@ -18,7 +18,7 @@
 ![Krigagem do Parâmetro pHÁgua](saida/Krigagem%20do%20parâmetro%20phagua.png)
 
 ### Semivariograma Ajustado
-![Semivariograma pHÁgua](saida/Semivariograma%20de%20phagua)
+![Semivariograma pHÁgua](saida/Semivariograma%20de%20phagua.png)
 
 ### Mapa de Localização
 ![Mapa de Localização](saida/mapa_final_layout.png)
