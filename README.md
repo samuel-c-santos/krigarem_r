@@ -1,47 +1,9 @@
-# Análise Geoestatística: Krigagem do Parâmetro Argila
+## 📂 Estrutura do Projeto
 
-Este projeto realiza uma análise geoestatística utilizando **Krigagem** para modelar e visualizar a distribuição espacial do parâmetro **Argila** em uma área específica. O projeto inclui a transformação de dados, ajuste de semivariogramas e a interpolação final por Krigagem.
-
-## 🗂️ Estrutura do Projeto
-
-- **imovel/**: Dados relacionados ao imóvel:
-  - `area_imovel_utm.shp`: Limite do imóvel.
-  - `Analise_solo_completo.shp`: Dados geoestatísticos do parâmetro **Argila**.
-- **localizacao/**: Camadas adicionais de localização.
-- **saida/**: Resultados gerados pelo script:
-  - `histograma e bloxplot argila.png`: Histogramas e boxplots antes e depois da transformação Box-Cox.
-  - `Krigagem do parâmetro Argila.png`: Resultado final da análise de Krigagem.
-  - `mapa_final_layout.png`: Mapa da localização da área de estudo.
-  - `pontos_analises_solo_localizacao_direita_manual.png`: Mapa com os pontos de coleta.
-  - `raster_krigagem.tif`: Raster final exportado para SIGs.
-  - `Semivariograma de Argila (Box-Cox).png`: Semivariograma ajustado adotado na Krigagem.
-
-## 🚀 Como Reproduzir o Projeto
-
-### Pré-requisitos
-1. Instale o [R](https://cran.r-project.org/) e os pacotes necessários:
-   ```R
-   install.packages(c("sf", "dplyr", "psych", "ggplot2", "raster", "gstat", "MASS", "ggspatial", "gt"))
-   ```
-
-2. Certifique-se de que os dados estão organizados conforme a estrutura acima.
-
-### Executando o Script
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/samuel-c-santos/krigarem_r.git
-   cd krigarem_r
-   ```
-
-2. Execute o script principal no R:
-   ```R
-   source("analise_estatistica_pH_agua.R")
-   ```
-
-### Resultados
-Os resultados incluem:
-- **Mapa Classificado por Krigagem**: Visualização do raster classificado.
-- **Raster de Krigagem**: Arquivo GeoTIFF armazenado na pasta `saida/`.
+- **imovel/**: Contém os shapefiles de análise, como o limite da área e os pontos de coleta.
+- **localizacao/**: Camadas geográficas adicionais para contexto, como limites municipais e estaduais.
+- **saida/**: Arquivos de saída, incluindo gráficos, mapas e o raster interpolado.
+- **analise_estatistica_pH_agua.R**: Script principal para análise estatística e geoestatística.
 
 ---
 
@@ -53,32 +15,63 @@ Os resultados incluem:
 ![QQ-Plot](saida/qqplot.png)
 
 ### Resultado da Krigagem
-![Krigagem do Parâmetro Argila](saida/Krigagem%20do%20parâmetro%20phagua.png)
+![Krigagem do Parâmetro pHÁgua](saida/Krigagem%20do%20parâmetro%20phagua.png)
 
 ### Semivariograma Ajustado
-![Semivariograma Box-Cox](saida/Semivariograma%20de%20phagua)
+![Semivariograma pHÁgua](saida/Semivariograma%20de%20phagua)
 
 ### Mapa de Localização
 ![Mapa de Localização](saida/mapa_final_layout.png)
 
 ---
 
-## 🗺️ Diagrama de Fluxo do Processo
+## 🔄 Fluxo de Trabalho
 
-```mermaid
-graph TD
-    A[Importação de Dados] --> B[Exploração Inicial]
-    B --> C[Transformação Box-Cox]
-    C --> D[Ajuste do Semivariograma]
-    D --> E[Interpolação por Krigagem]
-    E --> F[Visualização Final]
-    F --> G[Exportação do Raster]
-```
+1. **Importação de Dados**
+   - Carregar os shapefiles da área de estudo.
+   - Verificar e ajustar projeções espaciais.
+
+2. **Análise Estatística**
+   - Remoção de outliers utilizando estatísticas robustas.
+   - Geração de estatísticas descritivas e teste de normalidade (Shapiro-Wilk).
+
+3. **Análise Variográfica**
+   - Criação de semivariograma experimental.
+   - Ajuste de um modelo teórico esférico.
+
+4. **Interpolação por Krigagem**
+   - Interpolação espacial dos valores de pHÁgua utilizando o modelo ajustado.
+   - Classificação do raster em quatro categorias:
+     - Muito Baixo: < 5.5
+     - Baixo: 5.5–6.0
+     - Moderado: 6.0–6.5
+     - Alto: > 6.5
+
+5. **Exportação e Visualização**
+   - Exportação do raster final como GeoTIFF.
+   - Criação de mapas finais para apresentação.
+
+---
+
+## 📈 Estatísticas
+
+- **Teste de Normalidade (Shapiro-Wilk)**: Estatísticas e valor p calculados.
+- **Estatísticas Descritivas**:
+  - Média, Desvio Padrão, Mediana, Mínimo e Máximo.
+  - Assimetria e Curtose.
+
+---
+
+## 🗺️ Ferramentas Utilizadas
+
+- **Linguagem R**: Para análise estatística e geoestatística.
+- **Pacotes R**:
+  - `sf`: Manipulação de dados espaciais.
+  - `dplyr`: Transformação de dados.
+  - `ggplot2`: Visualização gráfica.
+  - `gstat`: Análise variográfica e krigagem.
+  - `raster`: Manipulação de rasters.
 
 ---
 
 ## 📜 Licença
-Este projeto está licenciado sob a [MIT License](LICENSE).
-
-## ✍️ Autor
-- **Samuel C. Santos** - [GitHub](https://github.com/samuel-c-santos)
