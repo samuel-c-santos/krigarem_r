@@ -40,8 +40,6 @@ graph TD
     I --> J[Exportação como GeoTIFF]
     J --> K[Visualização de Mapas]
 ```
-```
-
 ### **Explicação do Diagrama**
 - **A [Importação de Dados]:** Carrega os shapefiles necessários (área limite e camada de solo).
 - **B [Verificação de Projeções]:** Garante que as camadas estão na mesma projeção.
@@ -54,13 +52,6 @@ graph TD
 - **I [Classificação do Raster]:** Divide o raster em classes significativas.
 - **J [Exportação como GeoTIFF]:** Salva o raster interpolado para uso em SIG.
 - **K [Visualização de Mapas]:** Geração de gráficos e mapas finais.
-
----
-
-### **Incluir no README.md**
-1. Copie o código acima.
-2. Insira na seção correspondente no `README.md`.
-3. Salve e envie as alterações para o GitHub:
 
 ## 📈 Estatísticas
 
