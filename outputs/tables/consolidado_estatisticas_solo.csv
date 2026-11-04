@@ -1,0 +1,6 @@
+Variavel,Unidade,N_Amostras,Outliers_Removidos,Media,Desvio_Padrao,CV_perc,Classe_CV,Mediana,Minimo,Maximo,Assimetria,Curtose,Shapiro_W,Shapiro_p_valor,Distribuicao
+Teor de Argila,%,125,0,49.144,4.007,8.15,Baixa (CV <= 12%),47.0,41.0,57.0,0.174,-0.683,0.9248,0.0,Não-Normal (p <= 0.05)
+Matéria Orgânica (MO),g/dm³,124,1,35.981,3.42,9.51,Baixa (CV <= 12%),36.05,28.52,42.64,0.041,-0.635,0.9784,0.04417,Não-Normal (p <= 0.05)
+Fósforo Mehlich-1 (P),mg/dm³,119,6,33.165,10.378,31.29,Média (12% < CV <= 60%),34.33,10.94,55.06,0.001,-0.278,0.9767,0.03645,Não-Normal (p <= 0.05)
+Saturação por Bases (V%),%,125,0,67.006,7.887,11.77,Baixa (CV <= 12%),67.99,45.08,88.24,-0.103,-0.318,0.987,0.27922,Normal (p > 0.05)
+pH em Água,pH (adimensional),125,0,5.933,0.318,5.36,Baixa (CV <= 12%),5.94,5.1,6.84,0.169,0.218,0.9823,0.10201,Normal (p > 0.05)

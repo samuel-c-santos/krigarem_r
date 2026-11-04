@@ -1,0 +1,4 @@
+"Modelo","Nome_Modelo","SSErr","Efeito_Pepita","Contribuicao","Patamar","Alcance_m","IDE_perc","Classe_IDE"
+"Gau","Gaussiano",2.83380267642025,91.8482,178.4192,270.2675,2943.32,33.98,"Moderada (25% < IDE <= 75%)"
+"Sph","Esférico",2.96506912436037,88.8625,228.7422,317.6047,16212,27.98,"Moderada (25% < IDE <= 75%)"
+"Exp","Exponencial",6.05669032562529,75.5983,1047.4319,1123.0302,32703.7,6.73,"Forte (IDE <= 25%)"

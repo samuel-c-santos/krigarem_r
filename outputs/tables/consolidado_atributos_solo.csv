@@ -1,0 +1,6 @@
+"Variavel","Unidade","Media","Desvio_Padrao","CV_perc","Classe_CV","Normalidade","Melhor_Modelo","Alcance_m","IDE_perc","Classe_IDE"
+"pH em Água","pH (adimensional)",5.933,0.318,5.36,"Baixa (CV <= 12%)","Normal (p > 0.05)","Gaussiano",1118.59,85.42,"Fraca (IDE > 75%)"
+"Teor de Argila","%",49.144,4.007,8.15,"Baixa (CV <= 12%)","Não-Normal (p <= 0.05)","Exponencial",141.63,12.54,"Forte (IDE <= 25%)"
+"Saturação por Bases (V%)","%",67.006,7.887,11.77,"Baixa (CV <= 12%)","Normal (p > 0.05)","Gaussiano",1136.37,64.56,"Moderada (25% < IDE <= 75%)"
+"Fósforo Mehlich-1 (P)","mg/dm³",33.165,10.378,31.29,"Média (12% < CV <= 60%)","Não-Normal (p <= 0.05)","Gaussiano",2943.32,33.98,"Moderada (25% < IDE <= 75%)"
+"Matéria Orgânica (MO)","g/dm³",35.981,3.42,9.51,"Baixa (CV <= 12%)","Não-Normal (p <= 0.05)","Esférico",513.64,94.55,"Fraca (IDE > 75%)"

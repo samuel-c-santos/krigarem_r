@@ -1,0 +1,34 @@
+# R environment & history
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj.user/
+
+# Packages & dev
+.Renviron
+.Rprofile.site
+
+# RStudio temporary files
+.Rproj.user
+*.Rout
+Rplots.pdf
+
+# GIS / Spatial temporaries
+*.qix
+*.cpg
+*.aux.xml
+*.tif.ovr
+*.lock
+*.log
+
+# Large compressed archives / dumps
+*.rar
+*.zip
+*.7z
+*.tar.gz
+
+# System files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini

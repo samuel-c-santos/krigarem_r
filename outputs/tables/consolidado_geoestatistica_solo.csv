@@ -1,0 +1,6 @@
+Variavel_Clean,Modelo,Nome_Modelo,SSErr,Efeito_Pepita,Contribuicao,Patamar,Alcance_m,IDE_perc,Classe_IDE
+Argila_perc,Exp,Exponencial,0.0115630122881737,2.0583,14.3506,16.4089,141.63,12.54,Forte (IDE <= 25%)
+MO_g_dm3,Sph,Esférico,0.0169388656651675,10.7691,0.6211,11.3903,513.64,94.55,Fraca (IDE > 75%)
+P_mg_dm3,Gau,Gaussiano,2.83380267642025,91.8482,178.4192,270.2675,2943.32,33.98,Moderada (25% < IDE <= 75%)
+V_perc,Gau,Gaussiano,2.85572258151836,51.165,28.0867,79.2517,1136.37,64.56,Moderada (25% < IDE <= 75%)
+pH_Agua,Gau,Gaussiano,4.28174935937354e-06,0.095,0.0162,0.1112,1118.59,85.42,Fraca (IDE > 75%)

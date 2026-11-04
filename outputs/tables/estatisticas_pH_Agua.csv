@@ -1,0 +1,2 @@
+"Variavel","Unidade","N_Amostras","Outliers_Removidos","Media","Desvio_Padrao","CV_perc","Classe_CV","Mediana","Minimo","Maximo","Assimetria","Curtose","Shapiro_W","Shapiro_p_valor","Distribuicao"
+"pH em Água","pH (adimensional)",125,0,5.933,0.318,5.36,"Baixa (CV <= 12%)",5.94,5.1,6.84,0.169,0.218,0.9823,0.10201,"Normal (p > 0.05)"

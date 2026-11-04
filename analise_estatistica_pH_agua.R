@@ -1,8 +1,17 @@
+# ==============================================================================
+# NOTA: ARQUIVO HISTORICO / LEGADO
+# ==============================================================================
+# Este script representa a versao inicial do projeto.
+# O pipeline oficial moderno e modular encontra-se em:
+#   -> run_analysis.R (ponto de entrada na raiz)
+#   -> src/ (config.R, eda_soil.R, variography.R, kriging_engine.R, cartography.R)
+# ==============================================================================
+
 # ----------------------------------
 # Configuração inicial
 # ----------------------------------
 # Definir caminho padrão
-setwd("G:/Meu Drive/UFRA/SOL 24/")
+# setwd("G:/Meu Drive/UFRA/SOL 24/")
 
 # Carregar pacotes necessários
 library(sf)

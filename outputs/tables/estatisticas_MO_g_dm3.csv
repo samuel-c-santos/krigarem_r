@@ -1,0 +1,2 @@
+"Variavel","Unidade","N_Amostras","Outliers_Removidos","Media","Desvio_Padrao","CV_perc","Classe_CV","Mediana","Minimo","Maximo","Assimetria","Curtose","Shapiro_W","Shapiro_p_valor","Distribuicao"
+"Matéria Orgânica (MO)","g/dm³",124,1,35.981,3.42,9.51,"Baixa (CV <= 12%)",36.05,28.52,42.64,0.041,-0.635,0.9784,0.04417,"Não-Normal (p <= 0.05)"

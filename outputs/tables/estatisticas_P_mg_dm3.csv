@@ -1,0 +1,2 @@
+"Variavel","Unidade","N_Amostras","Outliers_Removidos","Media","Desvio_Padrao","CV_perc","Classe_CV","Mediana","Minimo","Maximo","Assimetria","Curtose","Shapiro_W","Shapiro_p_valor","Distribuicao"
+"Fósforo Mehlich-1 (P)","mg/dm³",119,6,33.165,10.378,31.29,"Média (12% < CV <= 60%)",34.33,10.94,55.06,0.001,-0.278,0.9767,0.03645,"Não-Normal (p <= 0.05)"

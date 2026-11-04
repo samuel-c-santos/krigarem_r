@@ -1,0 +1,2 @@
+"Variavel","Unidade","N_Amostras","Outliers_Removidos","Media","Desvio_Padrao","CV_perc","Classe_CV","Mediana","Minimo","Maximo","Assimetria","Curtose","Shapiro_W","Shapiro_p_valor","Distribuicao"
+"Teor de Argila","%",125,0,49.144,4.007,8.15,"Baixa (CV <= 12%)",47,41,57,0.174,-0.683,0.9248,0,"Não-Normal (p <= 0.05)"
